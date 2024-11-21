@@ -1,7 +1,6 @@
 # Specify parameters for coverage control in toml format
 
 NumRobots = 2
-NumFeatures = 2
 
 # Parameters for the environment
 [Environment]
@@ -30,6 +29,8 @@ UpdateSystemMap = true
 
 # Parameters for the IDF
 [Environment.IDF]
+
+NumGaussianFeatures = 2
 
 # Bivariate Normal Distribution truncated after TruncationBND * sigma
 # Makes it more realistic and reduces the number of erfc evaluations
